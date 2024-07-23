@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Header HTML Page-->
 <html lang="en">
 <head>
     <title>
@@ -7,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="headerPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -51,33 +52,40 @@
 
     <article>
         <section>
-            <h2>What is HTML?</h2>
-            <p>HTML is a language about manipulating boxes. Difference shaped boxes. Squares...rectangles...BOXES!!
-            It was not invented in 1739 by a man who could speak with dogs. No! In fact it was invented in 1990, by Tim
-            Berners-Lee.</p>
-        </section>
-        <h2>HTML Elements</h2>
-        <section class="flexbox-container">
-            <a href="boldPage.html"><div class="flexbox-item container-1"></div></a>
-            <a href="italicPage.html"><div class="flexbox-item container-2"></div></a>
-            <a href="headerPage.html"><div class="flexbox-item container-3"></div></a>
-            <a href="metaPage.html"><div class="flexbox-item container-4"></div></a>
-            <a href="pPage.html"><div class="flexbox-item container-5"></div></a>
-            <a href="divPage.html"><div class="flexbox-item container-6"></div></a>
-            <a href="navPage.html"><div class="flexbox-item container-7"></div></a>
-            <a href="articlePage.html"><div class="flexbox-item container-8"></div></a>
-            <a href="liListsPage.html"><div class="flexbox-item container-9"></div></a>
-            <a href="ulListsPage.html"><div class="flexbox-item container-10"></div></a>
+            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Header</span> Element | <code>&lt;h1&gt;</code></h2>
+
+            <p class="about">
+                The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">header</span> elements
+                create a hierarchy of headlines that can rank from <code>&lt;h1&gt;</code>(most important) to <code>&lt;h6&gt;</code>(least important).
+                Each <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">header</span>
+                automatically applies <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">font-weight: bold;</span> and
+                adjusts the size of the font.
+                <br><br>
+                It's important to note that <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">header</span>
+                elements are content not containers. They do not create a new section and are subject to the <a href="boxModelPage.html">box model</a> of their parent element.
+
+            </p>
         </section>
 
-        <h2>CSS Selectors</h2>
-        <section class="flexbox-container-2">
-            <a href="textPage.html"><div class="flexbox-item-2 container-11"></div></a>
-            <a href="cursorPage.html"><div class="flexbox-item-2 container-12"></div></a>
-            <a href="boxModelPage.html"><div class="flexbox-item-2 container-13"></div></a>
-
+        <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Sample Input and Output</h3>
+                <h4>Input:</h4>
+                <p><code>&lt;h1&gt;H1&lt;/h1&gt;</code></p>
+                <p><code>&lt;h2&gt;H2&lt;/h2&gt;</code></p>
+                <p><code>&lt;h3&gt;H3&lt;/h3&gt;</code></p>
+                <h4>Output:</h4>
+                <div class="exampleHeaders">
+                    <h1>H1</h1>
+                    <h2>H2</h2>
+                    <h3>H3</h3>
+                </div>
+            </div>
         </section>
 
+        <section class="wThree">
+            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/sections.html#the-header-element">here</a>.</p>
+        </section>
 
     </article>
 
