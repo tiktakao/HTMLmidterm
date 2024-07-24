@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="divPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -52,12 +52,79 @@
 
     <article>
         <section>
-            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">div</span> Element | <code>&lt;div&gt;</code></h2>
+            <h2>The <span class="elementText">Division</span> Element | <code>&lt;div&gt;</code></h2>
 
-            <p class="boldAbout">The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">div</span> element
+            <p class="about">The <span class="elementText">div</span> element is the most generic container. It's use has
+                no particular semantic significance and is thus only suggested to be a container of last resort.
             </p>
         </section>
 
+        <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Sample Input</h3>
+                <h4>HTML:</h4>
+                <pre><code>
+    &lt;div class="outterContainer"&gt;
+        &lt;div class="innerContainer"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+                </code></pre>
+                <h4>CSS</h4>
+                <pre><code>
+    .outterContainer{
+        border-style: solid;
+        border-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    .innerContainer{
+        border-style: solid;
+        border-color: green;
+        width: 50px;
+        height: 50px;
+    }
+
+                </code></pre>
+            </div>
+            <div class="exampleContainer-2">
+                <section class="expTop">
+                    <h3 >Explanation:</h3>
+                    <p>
+                        In the <span class="elementText">HTML</span> to the left, you see a <span class="elementText">div</span>
+                        within a <span class="elementText">div</span>. While this might not be the most semantically accurate
+                        example, it highlights this containers flexibility.
+                    </p>
+                    <ul>
+                        <li>
+                        The <b>parent</b> <span class="elementText">div</span>
+                        is a container that the
+                        <span class="elementText">CSS</span> defines as a box 100 by 100 pixels, and outlined in red.
+                        </li>
+                        <li>
+                        The <b>child</b> <span class="elementText">div</span>
+                        is a container that the
+                        <span class="elementText">CSS</span> defines as a box 50 by 50 pixels, and outlined in green.
+                        </li>
+                    </ul>
+
+                </section>
+                    <h3>Sample Output:</h3>
+                <section class="expBottom">
+
+                    <div class="outterContainer expBottom">
+                        <div class="innerContainer">
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>
         <section class="wThree">
             <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/grouping-content.html#the-div-element">here</a>.</p>
         </section>

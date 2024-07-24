@@ -169,6 +169,11 @@ article a:hover{
     text-align: center;
     font-size: 18pt;
 }
+
+.elementText{
+    font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;
+}
+
 /*endregion*/
 
 /*region Index Article Flexboxes*/
@@ -398,6 +403,7 @@ footer{
 }
 /*endregion*/
 
+/*region Meta Page*/
 #metaPage .exampleContainer-1{
     width: 900px;
 }
@@ -406,4 +412,91 @@ footer{
     padding-left: 10px;
     padding-top: 15px;
 }
+/*endregion*/
 
+/*region Div Page*/
+#divPage .examplecontainer-2{
+    display: flex;
+}
+
+#divPage .expTop{
+    height: 50%;
+}
+
+#divPage .expBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+}
+
+#divPage .outterContainer{
+    border-style: solid;
+    border-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#divPage .innerContainer{
+    border-style: solid;
+    border-color: green;
+    width: 50px;
+    height: 50px;
+}
+/*endregion*/
+
+/*region Cursor Page*/
+#cursorPage ol button{
+    height: 30px;
+    width: 80px;
+    margin: 35px;
+    padding: 5px;
+    border-style: outset;
+}
+
+#cursorPage .button1{
+    cursor: move;
+}
+
+#cursorPage .button2{
+    cursor: crosshair;
+}
+
+#cursorPage .button3{
+    cursor: wait;
+}
+
+#cursorPage .button4{
+    cursor: help;
+}
+/*endregion*/
+
+#boxModelPage .exampleContainer-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#boxModelPage .exampleBoxModel{
+    /*height: 60%;*/
+    /*width: 60%;*/
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    background-color: #FF6666;
+    border: 15px solid;
+    border-color: #6699FF;
+    margin: 5px;
+    z-index:2;
+}
+
+#boxModelPage .marginBoxModel{
+    position: absolute;
+    top: 30px;
+    background-color: #FFFF66;
+    padding: 50px;
+    z-index: 1;
+}

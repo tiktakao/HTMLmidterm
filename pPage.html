@@ -53,24 +53,34 @@
     <article>
         <section>
             <h2>
-                The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Paragraph</span>
+                The <span class="elementText">Paragraph</span>
                 Element | <code>&lt;p&gt;</code>
             </h2>
 
             <p class="about">
-                The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">paragraph</span>
-                element
+                The <span class="elementText">paragraph</span>
+                element is a commonly used element for grouping text content. While it is used to contain text, it is not
+                considered a container like <a href="divPage.html">&lt;div&gt;</a> or <a href="articlePage.html">&lt;article&gt;</a>
+                because a &lt;p&gt; cannot not syntactically contain another container, or even another &lt;p&gt;.
             </p>
+        </section>
+
+        <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Sample Input and Output</h3>
+                <h4>Input:</h4>
+                <p><code>&lt;p&gt;The paragraph element is a commonly used element for grouping text content.
+                    &lt;/p&gt;.</code></p>
+                <h4>Output:</h4>
+                <p>The <span class="elementText">paragraph</span>
+                element is a commonly used element for grouping text content.</p>
+            </div>
         </section>
 
         <section class="wThree">
             <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/grouping-content.html#the-p-element">here</a>.</p>
         </section>
-
-
     </article>
-
-
 
 <footer>
     <section class="footer-container">
@@ -98,9 +108,5 @@
     </section>
 
 </footer>
-
 </body>
-
-
-
 </html>
