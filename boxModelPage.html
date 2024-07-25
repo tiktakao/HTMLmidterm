@@ -56,32 +56,59 @@
         </section>
 
         <p class="about">
-            The <span class="elementText">Box Model</span> is a series of boxes surrounding content. There are three boxes:
+            The <span class="elementText">Box Model</span> is a series of boxes surrounding your content. Each of these can be
+            manipulated separately and have distinct characteristics.</p>
+
+        <ul class="about">
+            <li>
+            Directly surrounding but not including your content is the <b>padding</b>.
+            The <b>padding</b> inherits the background color of the content and creates space between your content and the <b>border</b>.
+            </li>
+            <li>
+            The <b>border</b> has a variety of styles to choose from, including <span class="elementText">solid, dotted, dashed, groove,
+            ridge,</span> and more.
+            </li>
+            <li>
+            Outside the <b>border</b> is the <b>margin</b>. The <b>margin</b> is colorless and cannot
+            be styled. Its sole purpose is to create space between the content it contains, and the <b>border</b> of its
+            neighboring containers to prevent collision or overlap. Make special note that a <b>margin</b> keeps a neighboring
+            <b>border</b> at bay, but will overlap with a neighboring <b>margin</b>. This means that the distance between two
+            containers is the size of the largest <b>margin</b> between the two containers.
+            </li>
+        </ul>
+
+        <p class="about">
+            If you would like to inspect the <span class="elementText">padding, border, or margin</span> of an element
+            online, you can right-click and 'inspect.'
+
         </p>
-        <ol>
-            <li>Padding</li>
-            <li>Border</li>
-            <li>Margin</li>
-        </ol>
 
         <section class="exampleContainer">
             <div class="exampleContainer-1">
                 <h3>CSS Input:</h3>
                 <pre><code>
-
-
+.exampleBoxModel{
+    padding: 10px;
+    border: 15px solid;
+    background-color: #FF6666; <span style="color:grey">&lt;!--red--&gt;</span>
+    border-color: #6699FF; <span style="color:grey">&lt;!--blue--&gt;</span>
+}
                 </code></pre>
+                <p>Because it is not possible to directly change the color of a margin, I have
+                underlaid a second container colored yellow to simulate a margin of <span class="elementText">25px</span>.</p>
             </div>
 
-            <h3>Outcome:</h3>
+
             <div class="exampleContainer-2">
+                <h3>Outcome:</h3>
+                <div class="insideExampleContainer-2">
                 <div class="exampleBoxModel">hello</div>
                 <div class="marginBoxModel">hello</div>
-            </div>
+            </div></div>
         </section>
 
         <section class="wThree">
-            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/text-level-semantics.html#the-b-element">here</a>.</p>
+            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/css-box-3/">here</a>.</p>
         </section>
 
 

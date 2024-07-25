@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="ulListsPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -52,10 +52,50 @@
 
     <article>
         <section>
-            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Unordered List</span> Element | <code>&lt;ul&gt;</code></h2>
+            <h2>The <span class="elementText">Unordered List</span> Element | <code>&lt;ul&gt;</code></h2>
 
-            <p class="boldAbout">The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Unordered List</span> element
+            <p class="about">
+                The <span class="elementText">Unordered List</span> element is used to create a list where there is no
+                level importance to each <a href="liListsPage.html"><span class="elementText">list item</span></a>.
+                Each item in this list usually, but doesn't necessarily start with a bullet point.
+
+
             </p>
+        </section>
+
+                <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Sample Input: </h3>
+                <pre><code>
+    &lt;ul&gt;
+        &lt;li&gt;
+            Lorem ipsum odor amet, consectetuer adipiscing elit.
+        &lt;/li&gt;
+        &lt;li&gt;
+            Ac orci purus purus sociosqu; rutrum sapien tortor.
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+
+
+
+
+                </code></pre>
+            </div>
+            <div class="exampleContainer-2">
+                <h3>Sample Output: </h3>
+
+                <ul>
+                    <li>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                    </li>
+                    <li>
+                        Ac orci purus purus sociosqu; rutrum sapien tortor.
+                    </li>
+                </ul>
+
+
+            </div>
         </section>
 
         <section class="wThree">

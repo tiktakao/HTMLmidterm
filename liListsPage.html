@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="liListsPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -52,16 +52,114 @@
 
     <article>
         <section>
-            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">list Item</span> Element | <code>&lt;li&gt;</code></h2>
+            <h2>The <span class="elementText">list Item</span> Element | <code>&lt;li&gt;</code></h2>
 
-            <p class="boldAbout">The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">list item</span> element
+            <p class="about">
+                The <span class="elementText">list item</span> element was made specifically to be nested within an <span class="elementText">ordered list</span>,
+                <a href="ulListsPage.html"><span class="elementText">unordered list</span></a>, or less commonly, a <span class="elementText">menu</span>.
+                The <span class="elementText">list items</span> in a <span class="elementText">menu</span> and <span class="elementText">unordered lists</span>
+                render identically, they just have different semantic implications.
             </p>
+        </section>
+
+        <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Unordered List Item Example:</h3>
+                <h4>Input:</h4>
+<pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Ham&lt;/li&gt;
+    &lt;li&gt;Grilled Cheese&lt;/li&gt;
+    &lt;li&gt;Hot Dog&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre>
+                <h4>Output: </h4>
+                <h5>A list of Sandwiches</h5>
+                <ul>
+                    <li>Ham</li>
+                    <li>Grilled Cheese</li>
+                    <li>Hot Dog</li>
+                </ul>
+
+            </div>
+
+            <div class="exampleContainer-2">
+                <h3>Ordered List Item Example:</h3>
+                <h4>Input:</h4>
+<pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Reuben&lt;/li&gt;
+    &lt;li&gt;Chicken Salad&lt;/li&gt;
+    &lt;li&gt;Philly Cheesesteak&lt;/li&gt;
+&lt;/ol&gt;
+
+</code></pre>
+
+                <h4>Output: </h4>
+                <h5>The Top Three Sandwiches</h5>
+                <ol>
+                    <li>Reuben</li>
+                    <li>Chicken Salad</li>
+                    <li>Philly Cheesesteak</li>
+                </ol>
+
+
+            </div>
+
+            <div class="exampleContainer-3">
+                <h3>Menu List Item Example:</h3>
+                <h4>Input:</h4>
+<pre><code>
+&lt;menu&gt;
+    &lt;li&gt;
+        &lt;button&gt;Mayonnaise&lt;/button&gt;
+        &lt;button&gt;Ketchup&lt;/button&gt;
+        &lt;button&gt;Mustard&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button&gt;Ham&lt;/button&gt;
+        &lt;button&gt;Turkey&lt;/button&gt;
+        &lt;button&gt;Bacon&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button&gt;Cheese&lt;/button&gt;
+        &lt;button&gt;Lettuce&lt;/button&gt;
+        &lt;button&gt;Tomato&lt;/button&gt;
+    &lt;/li&gt;
+
+&lt;/menu&gt;
+
+</code></pre>
+
+                <h4>Output: </h4>
+                <h5>Select Your Sandwich Toppings: </h5>
+                <menu>
+                    <li>
+                        <button>Mayonnaise</button>
+                        <button>Ketchup</button>
+                        <button>Mustard</button>
+                    </li>
+                    <li>
+                        <button>Ham</button>
+                        <button>Turkey</button>
+                        <button>Bacon</button>
+                    </li>
+                    <li>
+                        <button>Cheese</button>
+                        <button>Lettuce</button>
+                        <button>Tomato</button>
+                    </li>
+
+
+                </menu>
+
+            </div>
         </section>
 
         <section class="wThree">
             <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/grouping-content.html#the-li-element">here</a>.</p>
         </section>
-
 
     </article>
 
