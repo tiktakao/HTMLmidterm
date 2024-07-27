@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Cursor Css Page-->
+<!--List Style CSS Page-->
 <html lang="en">
 <head>
     <title>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body id="cursorPage">
+<body id="listStylePage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -19,7 +19,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="mailto:mtballogdajan@my.ccri.edu">CONTACT</a></li>
 
             <li class="dropdown">
@@ -51,62 +51,109 @@
         </ul>
     </nav>
 
-    <article>
-<section>
-            <h2>The <span class="elementText">Cursor</span> Properties | <code>{cursor: }</code></h2>
+        <article>
+        <section>
+            <h2>The <span class="elementText">List Style Type</span> Property | <code>{list-style-type}</code></h2>
 
             <p class="about">
-                The cursor is the little pointer you move around the screen to click on things&#8482;. As you might have noticed,
-                this cursor can change its appearance contextually to give cues on what action it might perform if the user
-                clicks the mouse. Using <span class="elementText">CSS</span> we can dictate when and to what the pointer will change
-                its appearance.
+                The <span class="elementText">list-style-type</span> property allows you to target the style of the
+                <span class="elementText"><a href="liListsPage.html">list item</a></span>. There are different styles
+                accessible to the developer depending on whether the <span class="elementText">list item</span> is nested
+                within an <span class="elementText">ordered</span> or <span class="elementText">unordered</span> list. It
+                is also possible to enter a custom character to be used.
+                <br><br>
+                While it is not directly related to the <span class="elementText">list-style-type</span>, if you would like
+                to further customize the style of the list marker, you can target the marker itself with pseudo-element
+                "::marker." This can be seen in the third column where the marker has been colored red.
+
             </p>
         </section>
 
         <section class="exampleContainer">
             <div class="exampleContainer-1">
-                <h3>CSS Input:</h3>
-                <ol>
-                    <li><pre>
-.button1{
-    cursor: move;
+                <h3>Unordered List Item Examples:</h3>
+                <h4>Input:</h4>
+                <pre><code>
+li{
+    list-style-type: disc;
 }
-                    </pre></li>
-                    <li><pre>
-.button2{
-    cursor: crosshair;
+
+li{
+    list-style-type: circle;
 }
-                    </pre></li>
-                    <pre><li>
-.button3{
-    cursor: wait;
+
+li{
+    list-style-type: square;
 }
-                    </li></pre>
-                    <pre><li>
-.button4{
-    cursor: help;
-}
-                    </li></pre>
-                </ol>
+
+                </code></pre>
+
+                <h4>Output: </h4>
+                <ul>
+                    <li class="ulDisc">Disc</li>
+                    <li class="ulCircle">Circle</li>
+                    <li class="ulSquare">Square</li>
+                </ul>
+
             </div>
 
             <div class="exampleContainer-2">
-                <h3>Outcome:</h3>
+                <h3>Ordered List Item Examples:</h3>
+                <h4>Input:</h4>
+                <pre><code>
+li{
+    list-style-type: decimal;
+}
+
+li{
+    list-style-type: upper-alpha;
+}
+
+li{
+    list-style-type: upper-roman;
+}
+
+                </code></pre>
+
+                <h4>Output:</h4>
                 <ol>
-                    <li><button class="button1">Move</button></li>
-                    <li><button class="button2">Crosshair</button></li>
-                    <li><button class="button3">Wait</button></li>
-                    <li><button class="button4">Help</button></li>
+                    <li class="olDecimal">Decimal</li>
+                    <li class="olUpAlpha">Upper-Alpha</li>
+                    <li class="olUpRoman">Upper-Roman</li>
                 </ol>
 
             </div>
+
+            <div class="exampleContainer-3">
+                <h3>Other List Item Examples:</h3>
+                <h4>Input:</h4>
+                <pre><code>
+li{
+    list-style-type: "-";
+}
+
+li{
+    list-style-type: "♣";
+}
+
+li::marker{
+    color: red;
+}
+
+                </code></pre>
+                <h4>Output:</h4>
+                <ul>
+                    <li class="misc">Dash</li>
+                    <li class="miscClub">Club</li>
+                    <li class="miscColor">Red</li>
+                </ul>
+            </div>
+
         </section>
 
         <section class="wThree">
-            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/CSS21/ui.html">here</a>.</p>
+            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/css-lists-3/#text-markers">here</a>.</p>
         </section>
-
-
     </article>
 
 

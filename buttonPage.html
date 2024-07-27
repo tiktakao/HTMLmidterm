@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Cursor Css Page-->
+<!--Button HTML Page-->
 <html lang="en">
 <head>
     <title>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body id="cursorPage">
+<body id="buttonPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -16,10 +16,9 @@
             <div class="logo-item"><h1>Totally Rad HTML</h1></div>
         </section>
     </header>
-
     <nav>
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="mailto:mtballogdajan@my.ccri.edu">CONTACT</a></li>
 
             <li class="dropdown">
@@ -50,67 +49,69 @@
             </li>
         </ul>
     </nav>
-
     <article>
-<section>
-            <h2>The <span class="elementText">Cursor</span> Properties | <code>{cursor: }</code></h2>
+        <section>
+            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Button</span> Element | <code>&lt;button&gt;</code></h2>
 
             <p class="about">
-                The cursor is the little pointer you move around the screen to click on things&#8482;. As you might have noticed,
-                this cursor can change its appearance contextually to give cues on what action it might perform if the user
-                clicks the mouse. Using <span class="elementText">CSS</span> we can dictate when and to what the pointer will change
-                its appearance.
+            The <span class="elementText">button</span> element is an interactive element that creates a <span class="elementText">button</span>
+            which a developer can assign purpose. This purpose could be to submit information, reset a field, or trigger javascript.
+            A <span class="elementText">button</span> has a list of appendable attributes to affect its behaviour. For example:
             </p>
+            <ul class="whatButtonDoList about">
+                <li>
+                    Type: which allows the behavior of the button to be defined(submit, reset, etc.).
+                </li>
+                <li>
+                    Autofocus: This makes the <span class="elementText">button</span> the pre-selected field affected by the
+                    'ENTER' key.
+                </li>
+                <li>
+                    Disabled: Disables the button and makes it unclickable.
+                </li>
+                <li>
+                    Onclick: triggers a JavaScript function.
+                </li>
+
+            </ul>
         </section>
 
         <section class="exampleContainer">
             <div class="exampleContainer-1">
-                <h3>CSS Input:</h3>
-                <ol>
-                    <li><pre>
-.button1{
-    cursor: move;
-}
-                    </pre></li>
-                    <li><pre>
-.button2{
-    cursor: crosshair;
-}
-                    </pre></li>
-                    <pre><li>
-.button3{
-    cursor: wait;
-}
-                    </li></pre>
-                    <pre><li>
-.button4{
-    cursor: help;
-}
-                    </li></pre>
-                </ol>
-            </div>
+                <h3>Input:</h3>
+                <pre><code>
+<ul>
+    <li>&lt;button autofocus&gt;Autofocus&lt;/b&gt;</li>
+    <li>&lt;button type="submit"&gt;Submit&lt;/b&gt;</li>
+    <li>&lt;button disabled&gt;Disabled&lt;/b&gt;</li>
+    <li>&lt;button onclick="alert('Yeahhhh thats a button')"&gt;...button?&lt;/b&gt;</li>
+</ul>
+                </code></pre>
 
+            </div>
             <div class="exampleContainer-2">
-                <h3>Outcome:</h3>
-                <ol>
-                    <li><button class="button1">Move</button></li>
-                    <li><button class="button2">Crosshair</button></li>
-                    <li><button class="button3">Wait</button></li>
-                    <li><button class="button4">Help</button></li>
-                </ol>
-
+                <h3>Output:</h3>
+                <br><br>
+                <ul>
+                    <li>
+                        <button autofocus>Autofocus</button>
+                    </li>
+                    <li>
+                        <button type="submit">Submit</button>
+                    </li>
+                    <li>
+                        <button disabled>Disabled</button>
+                    </li>
+                    <li>
+                        <button onclick="alert('Yeahhhh thats a button')">...button?</button>
+                    </li>
+                </ul>
             </div>
         </section>
-
         <section class="wThree">
-            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/CSS21/ui.html">here</a>.</p>
+            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110525/the-button-element.html">here</a>.</p>
         </section>
-
-
     </article>
-
-
-
 <footer>
     <section class="footer-container">
         <div class="footer-item">
@@ -137,9 +138,5 @@
     </section>
 
 </footer>
-
 </body>
-
-
-
 </html>

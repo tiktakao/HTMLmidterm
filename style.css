@@ -246,37 +246,37 @@ article a:hover{
 }
 
 .container-3{
-    background-image: url('dirImg/header.jpg');
+    background-image: url('dirImg/strikethrough.jpg');
     background-size: cover;
 }
 
 .container-4{
-    background-image: url('dirImg/meta.jpg');
+    background-image: url('dirImg/underline.jpg');
     background-size: cover;
 }
 
 .container-5{
-    background-image: url('dirImg/pContainer.jpg');
+    background-image: url('dirImg/header.jpg');
     background-size: cover;
 }
 
 .container-6{
-    background-image: url('dirImg/divContainer.jpg');
+    background-image: url('dirImg/meta.jpg');
     background-size: cover;
 }
 
 .container-7{
-    background-image: url('dirImg/nav.jpg');
+    background-image: url('dirImg/button.jpg');
     background-size: cover;
 }
 
 .container-8{
-    background-image: url('dirImg/article.jpg');
+    background-image: url('dirImg/liLists.jpg');
     background-size: cover;
 }
 
 .container-9{
-    background-image: url('dirImg/liLists.jpg');
+    background-image: url('dirImg/orderedLists.jpg');
     background-size: cover;
 }
 
@@ -286,7 +286,7 @@ article a:hover{
 }
 
 .container-11{
-    background-image: url('dirImg/textCSS.jpg');
+    background-image: url('dirImg/ListStyle.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -353,7 +353,7 @@ footer{
 
 .footer-item img:hover{
     opacity: 1;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in;
 }
 
 .footer-item-2{
@@ -528,3 +528,100 @@ footer{
 }
 /*endregion*/
 
+/*region Nav Page*/
+#navPage .exampleContainer-2 nav{
+    display: block;
+}
+
+#navPage .exampleContainer-2 nav ul{
+    display: block;
+    list-style-type: disc;
+    padding-left: 60px;
+    overflow: visible;
+}
+
+#navPage .exampleContainer-2 nav li{
+    float: none;
+    display: list-item;
+    padding: 5px;
+    margin:  5px;
+    overflow: visible;
+    border: 10px;
+}
+
+#navPage .exampleContainer-2 nav li:hover{
+    background-color: initial;
+}
+/*endregion*/
+
+/*region Button Page*/
+#buttonPage .whatButtonDoList{
+    padding-left: 80px;
+}
+
+#buttonPage .exampleContainer-1{
+    width: 85%;
+}
+
+#buttonPage .whatButtonDoList li{
+    padding:8px;
+}
+
+#buttonPage .exampleContainer-1 li{
+    list-style-type: none;
+}
+
+#buttonPage .exampleContainer-2 li{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 15px;
+}
+/*endregion*/
+
+/*region Underline Page*/
+#underlinePage .exampleContainer-1{
+    width: 60%;
+}
+/*endregion*/
+
+/*region List Style Type CSS Page*/
+#listStylePage .ulDisc{
+    list-style-type: disc;
+}
+
+#listStylePage .ulCircle{
+    list-style-type: circle;
+}
+
+#listStylePage .ulSquare{
+    list-style-type: square;
+}
+
+#listStylePage .olDecimal{
+    list-style-type: decimal;
+}
+
+#listStylePage .olUpAlpha{
+    list-style-type: upper-Alpha;
+}
+
+#listStylePage .olUpRoman{
+    list-style-type: upper-roman;
+}
+
+#listStylePage .misc{
+    list-style-type: "-";
+}
+
+#listStylePage .miscClub{
+    list-style-type: "♣";
+}
+
+#listStylePage .miscColor::marker{
+    color: red;
+}
+/*endregion*/
+
+/*#olListsPage .exampleContainer-1{*/
+/*    width: 60%;*/
+/*}*/

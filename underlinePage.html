@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Nav HTML Page-->
+<!--Underline HTML Page-->
 <html lang="en">
 <head>
     <title>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="underlinePage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -19,7 +19,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="mailto:mtballogdajan@my.ccri.edu">CONTACT</a></li>
 
             <li class="dropdown">
@@ -27,13 +27,14 @@
                 <div class="content">
                     <a href="boldPage.html"><code>&lt;b&gt;</code></a>
                     <a href="italicPage.html"><code>&lt;i&gt;</code></a>
+                    <a href="strikethroughPage.html"><code>&lt;s&gt;</code></a>
+                    <a href="underlinePage.html"><code>&lt;u&gt;</code></a>
                     <a href="headerPage.html"><code>&lt;h1&gt;</code></a>
                     <a href="metaPage.html"><code>&lt;meta&gt;</code></a>
-                    <a href="pPage.html"><code>&lt;p&gt;</code></a>
-                    <a href="divPage.html"><code>&lt;div&gt;</code></a>
-                    <a href="navPage.html"><code>&lt;nav&gt;</code></a>
-                    <a href="articlePage.html"><code>&lt;article&gt;</code></a>
+                    <a href="underlinePage.html"><code>&lt;u&gt;</code></a>
+                    <a href="buttonPage.html"><code>&lt;button&gt;</code></a>
                     <a href="liListsPage.html"><code>&lt;li&gt;</code></a>
+                    <a href="olListsPage.html"><code>&lt;ol&gt;</code></a>
                     <a href="ulListsPage.html"><code>&lt;ul&gt;</code></a>
                 </div>
             </li>
@@ -41,7 +42,7 @@
             <li class="dropdown">
                 <button>CSS &#9660;</button>
                 <div class="content">
-                    <a href="textPage.html">Text</a>
+                    <a href="listStylePage.html">List Style</a>
                     <a href="cursorPage.html">Cursor</a>
                     <a href="boxModelPage.html">Box Model</a>
                 </div>
@@ -52,19 +53,34 @@
 
     <article>
         <section>
-            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">Navigation</span> Element | <code>&lt;nav&gt;</code></h2>
+            <h2>The <span class="elementText">Underline</span> Element | <code>&lt;u&gt;</code></h2>
 
             <p class="about">
-                The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">navigation</span>
-                element is a section that should contain links around the site.
+                The <span class="elementText">underline</span> element is a text-level element with no semantic implication,
+                and it's purpose is limited to labeling a text as being misspelled, a proper noun in Chinese text, or for using in stylistic reasons.
+                However, the <span class="elementText">underline</span> elements documentation offers the advice that this element
+                should be avoided when there are more appropriate elements to choose from, and for some users, could be confused
+                for a hyperlink.
             </p>
         </section>
 
-        <section class="wThree">
-            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/sections.html#the-nav-element">here</a>.</p>
+         <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Input: </h3>
+            <pre><code>
+&lt;u&gt;This text is underlined, but not a hyperlink.&lt;/u&gt;
+            </code></pre>
+            </div>
+            <div class="exampleContainer-2">
+                <h3>Output:</h3>
+                <br>
+                <u>This text is underlined, but not a hyperlink.</u>
+
+            </div>
         </section>
-
-
+        <section class="wThree">
+            <p>To learn more, visit the official W3 documentation <a href="https://dev.w3.org/html5/spec-LC/Overview.html#the-u-element">here</a>.</p>
+        </section>
     </article>
 
 

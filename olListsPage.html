@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Article HTML Page-->
+<!--Ordered List HTML Page-->
 <html lang="en">
 <head>
     <title>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="olListsPage">
     <header>
         <section class="logo-container">
             <div class="logo-item"><img src="allPageImg/glassesShing.png" alt="Shiny Glasses" class="glassesUnder"/></div>
@@ -19,7 +19,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="mailto:mtballogdajan@my.ccri.edu">CONTACT</a></li>
 
             <li class="dropdown">
@@ -27,13 +27,14 @@
                 <div class="content">
                     <a href="boldPage.html"><code>&lt;b&gt;</code></a>
                     <a href="italicPage.html"><code>&lt;i&gt;</code></a>
+                    <a href="strikethroughPage.html"><code>&lt;s&gt;</code></a>
+                    <a href="underlinePage.html"><code>&lt;u&gt;</code></a>
                     <a href="headerPage.html"><code>&lt;h1&gt;</code></a>
                     <a href="metaPage.html"><code>&lt;meta&gt;</code></a>
-                    <a href="pPage.html"><code>&lt;p&gt;</code></a>
-                    <a href="divPage.html"><code>&lt;div&gt;</code></a>
-                    <a href="navPage.html"><code>&lt;nav&gt;</code></a>
-                    <a href="articlePage.html"><code>&lt;article&gt;</code></a>
+                    <a href="underlinePage.html"><code>&lt;u&gt;</code></a>
+                    <a href="buttonPage.html"><code>&lt;button&gt;</code></a>
                     <a href="liListsPage.html"><code>&lt;li&gt;</code></a>
+                    <a href="olListsPage.html"><code>&lt;ol&gt;</code></a>
                     <a href="ulListsPage.html"><code>&lt;ul&gt;</code></a>
                 </div>
             </li>
@@ -41,7 +42,7 @@
             <li class="dropdown">
                 <button>CSS &#9660;</button>
                 <div class="content">
-                    <a href="textPage.html">Text</a>
+                    <a href="listStylePage.html">List Style</a>
                     <a href="cursorPage.html">Cursor</a>
                     <a href="boxModelPage.html">Box Model</a>
                 </div>
@@ -52,17 +53,62 @@
 
     <article>
         <section>
-            <h2>The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">article</span> Element | <code>&lt;article&gt;</code></h2>
+            <h2>The <span class="elementText">Ordered List</span> Element | <code>&lt;ol&gt;</code></h2>
 
-            <p class="boldAbout">The <span style="font-family:'Lucisa Consol', 'Lucida Sans Typewriter', monaco, monospace;">article</span> element
+            <p class="about">
+                The <span class="elementText">Ordered List</span> element, the ranked counterpart of the <span class="elementText">
+                <a href="ulListsPage.html">unordered list</a></span>, numbers the <span class="elementText">
+                <a href="liListsPage.html">list items</a></span>. This can be helpful when there's a specific order to a list
             </p>
+
+            <ol start>
+                <li>adsf</li>
+                <li>adsf</li>
+                <li>adsf</li>
+
+            </ol>
+
         </section>
 
+        <section class="exampleContainer">
+            <div class="exampleContainer-1">
+                <h3>Sample Start: </h3>
+                <h4>Input: </h4>
+
+                <h4>Output:</h4>
+                <ol start="100">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+
+            </div>
+            <div class="exampleContainer-2">
+                <h3>Sample Reverse: </h3>
+                <h4>Input: </h4>
+
+                <h4>Output:</h4>
+                <ol reversed>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <div class="exampleContainer-3">
+                <h3>Sample Combination:</h3>
+                <h4>Input: </h4>
+
+                <h4>Output:</h4>
+                <ol type="A" start="26" reversed>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </section>
         <section class="wThree">
-            <p>To learn more, visit the official W3 documentation <a href="https://www.w3.org/TR/2011/WD-html5-20110405/sections.html#the-article-element">here</a>.</p>
+            <p>To learn more, visit the official W3 documentation <a href="https://dev.w3.org/html5/spec-LC/Overview.html#the-ol-element">here</a>.</p>
         </section>
-
-
     </article>
 
 
